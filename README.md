@@ -11,6 +11,6 @@ License
 
 MIT License
 
-Middleman-actionpack is released under the MIT license.
+“middleman-actionpack” is released under the MIT license.
 
-See `COPYING`.
+See “COPYING”.
