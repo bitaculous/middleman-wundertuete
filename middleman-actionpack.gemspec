@@ -1,19 +1,41 @@
-# -*- encoding: utf-8 -*-
-lib = File.expand_path('../lib', __FILE__)
-$LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
+#!/usr/bin/env gem build
+# encoding: utf-8
+
+$:.push File.expand_path('../lib', __FILE__)
+
 require 'middleman-actionpack/version'
 
-Gem::Specification.new do |gem|
-  gem.name          = "middleman-actionpack"
-  gem.version       = Middleman::Actionpack::VERSION
-  gem.authors       = ["Maik Kempe"]
-  gem.email         = ["mkempe@seibert-media.net"]
-  gem.description   = %q{TODO: Write a gem description}
-  gem.summary       = %q{TODO: Write a gem summary}
-  gem.homepage      = ""
+Gem::Specification.new do |s|
+  s.name          = 'middleman-actionpack'
+  s.summary       = 'Actionpack for Middleman.'
+  s.description   = 'Actionpack for Middleman.'
+  s.authors       = ['Maik Kempe']
+  s.email         = ['dev@nrolla.com']
+  s.homepage      = 'https://github.com/mkempe/middleman-actionpack'
+  s.version       = Middleman::Actionpack::VERSION
+  s.date          = '2012-10-01'
+  s.licenses      = ['MIT']
 
-  gem.files         = `git ls-files`.split($/)
-  gem.executables   = gem.files.grep(%r{^bin/}).map{ |f| File.basename(f) }
-  gem.test_files    = gem.files.grep(%r{^(test|spec|features)/})
-  gem.require_paths = ["lib"]
+  s.require_paths = ['lib']
+
+  s.files = %w[
+    bin/donar
+    lib/donar/ui/shell.rb
+    lib/donar/cli.rb
+    lib/donar/version.rb
+    lib/donar.rb
+    COPYING
+    Gemfile
+    Rakefile
+    README.md
+  ]
+
+  s.test_files = s.files.grep(%r{^(features|spec|test)/})
+
+  s.add_runtime_dependency 'middleman-more', '~> 3.0.0'
+
+  s.add_development_dependency 'rake',  '~> 0.9.2'
+  s.add_development_dependency 'rspec', '~> 2.11.0'
+
+  s.required_rubygems_version = Gem::Requirement.new('>= 1.3.6')
 end

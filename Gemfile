@@ -1,4 +1,8 @@
-source 'https://rubygems.org'
+#!/usr/bin/env bundle
+# encoding: utf-8
 
-# Specify your gem's dependencies in middleman-actionpack.gemspec
-gemspec
+ruby '1.9.3'
+
+source :rubygems
+
+gemspec # Include gemspec dependencies

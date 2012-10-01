@@ -1,29 +1,16 @@
-# Middleman::Actionpack
+[MIDDLEMAN-ACTIONPACK](https://github.com/mkempe/middleman-actionpack)
+======================================================================
 
-TODO: Write a gem description
+Summary
+-------
 
-## Installation
+Actionpack for Middleman.
 
-Add this line to your application's Gemfile:
+License
+-------
 
-    gem 'middleman-actionpack'
+MIT License
 
-And then execute:
+Middleman-actionpack is released under the MIT license.
 
-    $ bundle
-
-Or install it yourself as:
-
-    $ gem install middleman-actionpack
-
-## Usage
-
-TODO: Write usage instructions here
-
-## Contributing
-
-1. Fork it
-2. Create your feature branch (`git checkout -b my-new-feature`)
-3. Commit your changes (`git commit -am 'Add some feature'`)
-4. Push to the branch (`git push origin my-new-feature`)
-5. Create new Pull Request
+See `COPYING`.
