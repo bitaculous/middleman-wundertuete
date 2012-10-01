@@ -7,30 +7,21 @@ require 'middleman-actionpack/version'
 
 Gem::Specification.new do |s|
   s.name          = 'middleman-actionpack'
-  s.summary       = 'Actionpack for Middleman.'
-  s.description   = 'Actionpack for Middleman.'
+  s.summary       = 'Actionpack for Middleman (Hand-crafted frontend development).'
+  s.description   = 'Actionpack for Middleman (Hand-crafted frontend development).'
   s.authors       = ['Maik Kempe']
   s.email         = ['dev@nrolla.com']
   s.homepage      = 'https://github.com/mkempe/middleman-actionpack'
   s.version       = Middleman::Actionpack::VERSION
+  s.platform      = Gem::Platform::RUBY
   s.date          = '2012-10-01'
   s.licenses      = ['MIT']
 
   s.require_paths = ['lib']
 
-  s.files = %w[
-    bin/donar
-    lib/donar/ui/shell.rb
-    lib/donar/cli.rb
-    lib/donar/version.rb
-    lib/donar.rb
-    COPYING
-    Gemfile
-    Rakefile
-    README.md
-  ]
-
-  s.test_files = s.files.grep(%r{^(features|spec|test)/})
+  s.files         = `git ls-files`.split($/)
+  s.executables   = s.files.grep(%r{^bin/}).map { |f| File.basename(f) }
+  s.test_files    = s.files.grep(%r{^(features|spec|test)/})
 
   s.add_runtime_dependency 'middleman-more', '~> 3.0.0'
 

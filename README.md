@@ -4,7 +4,7 @@
 Summary
 -------
 
-Actionpack for Middleman.
+Actionpack for Middleman (Hand-crafted frontend development).
 
 License
 -------
