@@ -1,9 +1,10 @@
 # encoding: utf-8
 
-require 'middleman-actionpack/version'
+require 'middleman-core'
+require 'middleman-actionpack/template'
 
-module Middleman
-  module Actionpack
-    # Your code goes here...
-  end
+Middleman::Extensions.register(:actionpack) do
+  require 'middleman-actionpack/extension'
+
+  Middleman::Actionpack
 end
