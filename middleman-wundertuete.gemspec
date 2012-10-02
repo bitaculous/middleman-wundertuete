@@ -13,7 +13,7 @@ Gem::Specification.new do |s|
   s.authors       = ['Maik Kempe']
   s.email         = ['dev@nrolla.com']
   s.homepage      = 'https://github.com/mkempe/middleman-wundertuete'
-  s.version       = Middleman::Actionpack::VERSION
+  s.version       = Middleman::Wundertuete::VERSION
   s.platform      = Gem::Platform::RUBY
   s.date          = '2012-10-02'
   s.licenses      = ['MIT']

@@ -11,6 +11,6 @@ License
 
 MIT License
 
-“middleman-actionpack” is released under the MIT license.
+“middleman-wundertuete” is released under the MIT license.
 
 See “COPYING”.
