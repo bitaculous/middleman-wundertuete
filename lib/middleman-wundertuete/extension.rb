@@ -10,20 +10,21 @@ module Middleman
         settings = Options.new(options)
         yield settings if block_given?
 
+        config_dir = File.expand_path('../extension/config', __FILE__) # Get config directory
+        assets_dir = File.expand_path('../../../vendor/assets', __FILE__) # Get assets directory
+
+        Dir["#{config_dir}/*.rb"].each { |config| load(config) } # Load additional configurations
+
+        app.set :sass_assets_paths, [ # Set sass assets paths
+          "#{assets_dir}/stylesheets",
+          "#{assets_dir}/stylesheets/bourbon"
+        ]
+
+        app.set :js_assets_paths, [ # Set javascript assets paths
+          "#{assets_dir}/javascripts"
+        ]
+
         app.after_configuration do # Once configuration is parsed
-          config_dir = File.expand_path('../extension/config', __FILE__) # Get config directory
-          assets_dir = File.expand_path('../../../vendor/assets', __FILE__) # Get assets directory
-
-          Dir["#{config_dir}/*.rb"].each { |config| load(config) } # Load additional configurations
-
-          app.set :sass_assets_paths, [ # Set sass assets paths
-            "#{assets_dir}/stylesheets",
-            "#{assets_dir}/stylesheets/bourbon"
-          ]
-
-          app.set :js_assets_paths, [ # Set javascript assets paths
-            "#{assets_dir}/javascripts"
-          ]
         end
       end
 
