@@ -4,18 +4,18 @@
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 
-require 'middleman-actionpack/version'
+require 'middleman-wundertuete/version'
 
 Gem::Specification.new do |s|
-  s.name          = 'middleman-actionpack'
-  s.summary       = 'Actionpack for Middleman (Hand-crafted frontend development).'
-  s.description   = 'Actionpack for Middleman (Hand-crafted frontend development).'
+  s.name          = 'middleman-wundertuete'
+  s.summary       = 'A “wundertüte” for Middleman (Hand-crafted frontend development).'
+  s.description   = 'A “wundertüte” for Middleman (Hand-crafted frontend development).'
   s.authors       = ['Maik Kempe']
   s.email         = ['dev@nrolla.com']
-  s.homepage      = 'https://github.com/mkempe/middleman-actionpack'
+  s.homepage      = 'https://github.com/mkempe/middleman-wundertuete'
   s.version       = Middleman::Actionpack::VERSION
   s.platform      = Gem::Platform::RUBY
-  s.date          = '2012-10-01'
+  s.date          = '2012-10-02'
   s.licenses      = ['MIT']
 
   s.require_paths = ['lib']

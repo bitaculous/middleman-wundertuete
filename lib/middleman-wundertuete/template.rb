@@ -1,7 +1,7 @@
 # encoding: utf-8
 
 module Middleman
-  module Actionpack
+  module Wundertuete
     class Template < Middleman::Templates::Base
       class_option 'css_dir', :default => 'stylesheets', :desc => 'The path to the css files.'
 
@@ -20,4 +20,4 @@ module Middleman
   end
 end
 
-Middleman::Templates.register(:actionpack, Middleman::Actionpack::Template)
+Middleman::Templates.register(:wundertuete, Middleman::Wundertuete::Template)

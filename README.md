@@ -1,10 +1,10 @@
-[MIDDLEMAN-ACTIONPACK](https://github.com/mkempe/middleman-actionpack)
-======================================================================
+[MIDDLEMAN-WUNDERTUETE](https://github.com/mkempe/middleman-wundertuete)
+========================================================================
 
 Summary
 -------
 
-Actionpack for Middleman (Hand-crafted frontend development).
+A “wundertüte” for [Middleman (Hand-crafted frontend development)](http://middlemanapp.com).
 
 License
 -------
