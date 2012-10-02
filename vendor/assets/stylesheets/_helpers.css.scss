@@ -1,0 +1,117 @@
+/**
+ * _helpers.css.scss
+ *
+ * @author Maik Kempe
+ * @package middleman-actionpack
+ * @media screen
+ * @version 1.0
+ * @revision -
+ * @lastmodified 10/02/12
+ */
+
+/**
+ * @mixin helpers
+ *
+ * Non-semantic helper classes.
+ */
+
+@mixin helpers {
+  .invisible { @include invisible; }
+
+  .hidden { @include hidden; }
+
+  .visually_hidden { @include visually-hidden; }
+
+  .clearfix { @include micro-clearfix; }
+}
+
+/**
+ * @mixin invisible
+ *
+ * Hide visually and from screenreaders, but maintain layout.
+ */
+
+@mixin invisible { visibility: hidden; }
+
+/**
+ * @mixin hidden
+ *
+ * Hide for both screenreaders and browsers.
+ *
+ * @see http://css-discuss.incutio.com/wiki/screenreader_visibility
+ */
+
+@mixin hidden {
+  @include invisible;
+
+  display: none;
+}
+
+/**
+ * @mixin visually hidden
+ *
+ * Hide only visually, but have it available for screenreaders by Jon Neal.
+ *
+ * @see http://www.webaim.org/techniques/css/invisiblecontent
+ * @see http://adaptivethemes.com/using-css-clip-as-an-accessible-method-of-hiding-content
+ */
+
+@mixin visually-hidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+
+  /**
+   * Extends the “visually-hidden” class to allow the element to be focusable
+   * when navigated to via the keyboard.
+   *
+   * @see http://drupal.org/node/897638
+   */
+
+  &.focusable:active,
+  &.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+  }
+}
+
+/**
+ * @mixin micro clearfix
+ *
+ * A new micro clearfix hack.
+ *
+ * @see http://nicolasgallagher.com/micro-clearfix-hack
+ */
+
+@mixin micro-clearfix {
+  &:before,
+  &:after {
+    content: '';
+    display: table;
+  }
+  &:after { clear: both; }
+  zoom: 1;
+}
+
+/**
+ * @mixin smack in the middle
+ */
+
+@mixin smack-in-the-middle($height, $width: 10px) {
+  height: $height;
+  left: 50%;
+  margin: -#{$height / 2} 0 0 -#{$width / 2};
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  width: $width;
+}
