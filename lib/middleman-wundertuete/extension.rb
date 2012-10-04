@@ -1,16 +1,15 @@
 # encoding: utf-8
 
+require 'middleman-wundertuete/extension/options'
+
 require 'middleman-wundertuete/helpers/custom_helpers'
 require 'middleman-wundertuete/helpers/haml_helpers'
 
 module Middleman
   module Wundertuete
-    # All the options for this extension
-    class Options < Struct.new(:foo, :bar); end
-
     class << self # Setup extension
       def registered(app, options = {}, &block) # Once registered
-        settings = Options.new(options)
+        settings = Extension::Options.new(options)
         yield settings if block_given?
 
         config_dir = File.expand_path('../extension/config', __FILE__) # Get config directory
