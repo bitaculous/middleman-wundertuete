@@ -2,7 +2,7 @@
 # encoding: utf-8
 
 lib = File.expand_path('../lib', __FILE__)
-$LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
+$:.unshift(lib) unless $:.include?(lib)
 
 require 'middleman-wundertuete/version'
 
@@ -24,6 +24,7 @@ Gem::Specification.new do |s|
   s.executables   = s.files.grep(%r{^bin/}).map { |f| File.basename(f) }
   s.test_files    = s.files.grep(%r{^(features|spec|test)/})
 
+  s.add_runtime_dependency 'middleman-more', '~> 3.0.0'
   s.add_runtime_dependency 'middleman-more', '~> 3.0.0'
 
   s.add_development_dependency 'rake',  '~> 0.9.2'

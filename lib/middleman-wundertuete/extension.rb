@@ -1,5 +1,8 @@
 # encoding: utf-8
 
+require 'middleman-wundertuete/helpers/custom_helpers'
+require 'middleman-wundertuete/helpers/haml_helpers'
+
 module Middleman
   module Wundertuete
     # All the options for this extension
@@ -24,11 +27,19 @@ module Middleman
           "#{assets_dir}/javascripts"
         ]
 
+        app.send :include, Helpers # Include helpers
+
         app.after_configuration do # Once configuration is parsed
         end
       end
 
       alias :included :registered
+    end
+
+    # Helpers for use within templates and layouts
+    module Helpers
+      include Middleman::Wundertuete::Helpers::CustomHelpers
+      include Middleman::Wundertuete::Helpers::HamlHelpers
     end
   end
 end
