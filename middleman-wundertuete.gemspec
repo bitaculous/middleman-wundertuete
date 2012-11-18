@@ -24,11 +24,11 @@ Gem::Specification.new do |s|
   s.executables   = s.files.grep(%r{^bin/}).map { |f| File.basename(f) }
   s.test_files    = s.files.grep(%r{^(features|spec|test)/})
 
-  s.add_runtime_dependency 'middleman-more', '~> 3.0.0'
-  s.add_runtime_dependency 'middleman-more', '~> 3.0.0'
+  s.add_runtime_dependency 'middleman-more', '~> 3.0.6'
+  s.add_runtime_dependency 'middleman-more', '~> 3.0.6'
 
-  s.add_development_dependency 'rake',  '~> 0.9.2'
-  s.add_development_dependency 'rspec', '~> 2.11.0'
+  s.add_development_dependency 'rake',  '~> 10.0'
+  s.add_development_dependency 'rspec', '~> 2.12.0'
 
   s.required_rubygems_version = Gem::Requirement.new('>= 1.3.6')
 end
