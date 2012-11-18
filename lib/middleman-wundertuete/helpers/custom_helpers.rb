@@ -14,9 +14,9 @@ module Middleman
         #
         # Examples
         #
-        #   copyright('Foo') => '©2011 Foo - All rights reserved.'
+        #   copyright('Foo') → '©2011 Foo - All rights reserved.'
         #
-        #   copyright('Foo', { :initial_year => '2006' }) => '©2006-2011 Foo - All rights reserved.'
+        #   copyright('Foo', { initial_year: '2006' }) → '©2006-2011 Foo - All rights reserved.'
         #
         # Returns the copyright as String.
         def copyright(copyright_owner, options = {})
