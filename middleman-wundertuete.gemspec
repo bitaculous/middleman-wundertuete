@@ -27,7 +27,7 @@ Gem::Specification.new do |s|
   s.add_runtime_dependency 'middleman-more', '~> 3.0.6'
   s.add_runtime_dependency 'middleman-more', '~> 3.0.6'
 
-  s.add_development_dependency 'rake',  '~> 10.0.1'
+  s.add_development_dependency 'rake',  '~> 10.0.2'
   s.add_development_dependency 'rspec', '~> 2.12.0'
 
   s.required_rubygems_version = Gem::Requirement.new('>= 1.3.6')
