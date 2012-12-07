@@ -15,7 +15,7 @@ Gem::Specification.new do |s|
   s.homepage      = 'https://github.com/mkempe/middleman-wundertuete'
   s.version       = Middleman::Wundertuete::VERSION
   s.platform      = Gem::Platform::RUBY
-  s.date          = '2012-11-18'
+  s.date          = '2012-12-07'
   s.licenses      = ['MIT']
 
   s.require_paths = ['lib']
