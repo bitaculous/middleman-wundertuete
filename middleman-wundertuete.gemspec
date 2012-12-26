@@ -24,7 +24,7 @@ Gem::Specification.new do |s|
   s.executables   = s.files.grep(%r{^bin/}).map { |f| File.basename(f) }
   s.test_files    = s.files.grep(%r{^(features|spec|test)/})
 
-  s.add_runtime_dependency 'middleman', '3.0.6'
+  s.add_runtime_dependency 'middleman', '~> 3.0.7'
 
   s.add_development_dependency 'rake',    '~> 10.0.3'
 
