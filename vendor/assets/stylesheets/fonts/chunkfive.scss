@@ -1,0 +1,27 @@
+/**
+ * chunkfive.css.scss
+ *
+ * @author Maik Kempe
+ * @package fonts
+ * @media screen
+ * @version 1.0
+ * @revision -
+ */
+
+@import 'bourbon';
+
+/**
+ * @mixin chunkfive
+ */
+
+@mixin chunkfive {
+  @include chunkfive-regular;
+}
+
+/**
+ * @mixin chunkfive regular
+ */
+
+@mixin chunkfive-regular {
+  @include font-face(ChunkFiveRegular, font-url('chunkfive/regular', $only-path: true));
+}

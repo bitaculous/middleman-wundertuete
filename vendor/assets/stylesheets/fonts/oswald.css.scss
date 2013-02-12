@@ -1,0 +1,54 @@
+/**
+ * oswald.css.scss
+ *
+ * @author Maik Kempe
+ * @package fonts
+ * @media screen
+ * @version 1.0
+ * @revision -
+ */
+
+@import 'bourbon';
+
+/**
+ * @mixin oswald
+ */
+
+@mixin oswald {
+  @include oswald-regular;
+  @include oswald-light;
+  @include oswald-bold;
+  @include oswald-stencil-regular;
+}
+
+/**
+ * @mixin oswald regular
+ */
+
+@mixin oswald-regular {
+  @include font-face(OswaldRegular, font-url('oswald/regular', $only-path: true));
+}
+
+/**
+ * @mixin oswald light
+ */
+
+@mixin oswald-light {
+  @include font-face(OswaldLight, font-url('oswald/light', $only-path: true));
+}
+
+/**
+ * @mixin oswald bold
+ */
+
+@mixin oswald-bold {
+  @include font-face(OswaldBold, font-url('oswald/bold', $only-path: true));
+}
+
+/**
+ * @mixin oswald stencil regular
+ */
+
+@mixin oswald-stencil-regular {
+  @include font-face(OswaldStencilRegular, font-url('oswald/stencil', $only-path: true));
+}
