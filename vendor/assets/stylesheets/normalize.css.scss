@@ -1,14 +1,13 @@
 /**
- * _normalize.css.scss
+ * normalize.css.scss
  *
  * @author Maik Kempe
- * @package middleman-wundertuete
+ * @package normalize
  * @media screen
  * @version 1.0
  * @revision -
- * @lastmodified 10/10/12
- *
- * @see http://necolas.github.com/normalize.css
+ * @lastmodified 02/10/13
+ * @see http://git.io/normalize
  */
 
 /**
@@ -43,6 +42,7 @@
   footer,
   header,
   hgroup,
+  main,
   nav,
   section,
   summary { display: block; }
@@ -121,14 +121,17 @@
 
 @mixin typography {
   /**
-   * Addresses “h1” font sizes within “section” and “article” in Firefox 4+,
-   * Safari 5, and Chrome.
+   * Address variable “h1” font-size and margin within “section” and “article”
+   * contexts in Firefox 4+, Safari 5, and Chrome.
    */
 
-  h1 { font-size: 2em; }
+  h1 {
+    font-size: 2em;
+    margin: 0.67em 0;
+  }
 
   /**
-   * Addresses styling not present in IE 8/9, Safari 5, and Chrome.
+   * Address styling not present in IE 8/9, Safari 5, and Chrome.
    */
 
   abbr[title] { border-bottom: 1px dotted; }
@@ -145,6 +148,16 @@
    */
 
   dfn { font-style: italic; }
+
+  /**
+   * Address differences between Firefox and other browsers.
+   */
+
+  hr {
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    height: 0;
+  }
 
   /**
    * Addresses styling not present in IE 8/9.
@@ -171,11 +184,7 @@
    * Improves readability of pre-formatted text in all browsers.
    */
 
-  pre {
-    white-space: pre;
-    white-space: pre-wrap;
-    word-wrap: break-word;
-  }
+  pre { white-space: pre-wrap; }
 
   /**
    * Sets consistent quote types.
@@ -242,7 +251,7 @@
 
 @mixin forms {
   /**
-   * Define consistent border, margin, and padding.
+   * Define consistent border, margin and padding.
    */
 
   fieldset {
@@ -252,7 +261,7 @@
   }
 
   /**
-   * 1. Corrects color not being inherited in IE 8/9.
+   * 1. Corrects “color” not being inherited in IE 8/9.
    * 2. Remove padding so people aren't caught out if they zero out fieldsets.
    */
 
@@ -264,7 +273,7 @@
   /**
    * 1. Corrects font family not being inherited in all browsers.
    * 2. Corrects font size not being inherited in all browsers.
-   * 3. Addresses margins set differently in Firefox 4+, Safari 5, and Chrome
+   * 3. Addresses margins set differently in Firefox 4+, Safari 5 and Chrome.
    */
 
   button,
@@ -283,6 +292,16 @@
 
   button,
   input { line-height: normal; }
+
+  /**
+   * Address inconsistent “text-transform” inheritance for “button” and “select”.
+   * All other form control elements do not inherit “text-transform” values.
+   * Correct “button” style inheritance in Chrome, Safari 5+, and IE 8+.
+   * Correct “select” style inheritance in Firefox 4+ and Opera.
+   */
+
+  button,
+  select { text-transform: none; }
 
   /**
    * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native “audio”
@@ -337,9 +356,7 @@
    */
 
   input[type="search"]::-webkit-search-cancel-button,
-  input[type="search"]::-webkit-search-decoration {
-    -webkit-appearance: none;
-  }
+  input[type="search"]::-webkit-search-decoration { -webkit-appearance: none; }
 
   /**
    * Removes inner padding and border in Firefox 4+.

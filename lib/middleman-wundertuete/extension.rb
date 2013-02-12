@@ -2,8 +2,8 @@
 
 require 'middleman-wundertuete/extension/options'
 
-require 'middleman-wundertuete/helpers/custom_helpers'
 require 'middleman-wundertuete/helpers/haml_helpers'
+require 'middleman-wundertuete/helpers/text_helpers'
 
 module Middleman
   module Wundertuete
@@ -29,16 +29,16 @@ module Middleman
         app.send :include, Helpers # Include helpers
 
         app.after_configuration do # Once configuration is parsed
+          # ...
         end
       end
 
       alias :included :registered
     end
 
-    # Helpers for use within templates and layouts
-    module Helpers
-      include Middleman::Wundertuete::Helpers::CustomHelpers
-      include Middleman::Wundertuete::Helpers::HamlHelpers
+    module Helpers # Helpers for use within templates and layouts
+      include Middleman::Wundertuete::Helpers::HamlHelpers if defined? Haml
+      include Middleman::Wundertuete::Helpers::TextHelpers
     end
   end
 end

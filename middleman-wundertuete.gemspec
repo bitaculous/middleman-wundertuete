@@ -28,9 +28,9 @@ Gem::Specification.new do |s|
 
   s.add_development_dependency 'rake',    '~> 10.0.3'
 
-  s.add_development_dependency 'rspec',   '~> 2.12.0'
+  s.add_development_dependency 'bourbon', '~> 3.1.0'
 
-  s.add_development_dependency 'bourbon', '~> 3.0.1'
+  s.add_development_dependency 'rspec',   '~> 2.12.0'
 
   s.required_rubygems_version = Gem::Requirement.new('>= 1.3.6')
 end
