@@ -3,8 +3,7 @@
 module Middleman
   module Wundertuete
     module Helpers
-      # Public: Various haml helpers.
-      module HamlHelpers
+      module HamlHelper
         # Public: Helper to generate conditional html tags for IE. We're just conditionally adding
         # an extra class onto the html tag. This allows us to keep our browser-specific css in the same
         # file. For more information see Paul Irish's blog post “Conditional stylesheets vs CSS hacks?

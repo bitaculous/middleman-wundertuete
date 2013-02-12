@@ -8,5 +8,5 @@ $:.unshift(lib) unless $:.include?(lib)
 require 'middleman-wundertuete'
 
 RSpec.configure do |config|
-  # Some (optional) config here
+  # ...
 end

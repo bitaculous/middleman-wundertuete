@@ -2,14 +2,15 @@
 
 require 'middleman-wundertuete/extension/options'
 
-require 'middleman-wundertuete/helpers/haml_helpers'
-require 'middleman-wundertuete/helpers/text_helpers'
+require 'middleman-wundertuete/helpers/haml_helper'
+require 'middleman-wundertuete/helpers/text_helper'
 
 module Middleman
   module Wundertuete
     class << self # Setup extension
       def registered(app, options = {}, &block) # Once registered
-        settings = Extension::Options.new(options)
+        settings = Extension::Options.new options
+
         yield settings if block_given?
 
         config_dir = File.expand_path('../extension/config', __FILE__) # Get config directory
@@ -37,8 +38,8 @@ module Middleman
     end
 
     module Helpers # Helpers for use within templates and layouts
-      include Middleman::Wundertuete::Helpers::HamlHelpers if defined? Haml
-      include Middleman::Wundertuete::Helpers::TextHelpers
+      include Middleman::Wundertuete::Helpers::HamlHelper if defined? Haml
+      include Middleman::Wundertuete::Helpers::TextHelper
     end
   end
 end

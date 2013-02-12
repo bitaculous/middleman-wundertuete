@@ -1,5 +1,7 @@
 # encoding: utf-8
 
+require 'middleman-core/templates'
+
 module Middleman
   module Wundertuete
     class Template < Middleman::Templates::Base
@@ -10,7 +12,7 @@ module Middleman
       class_option 'js_dir', default: 'javascripts', desc: 'The path to the javascript files.'
 
       def self.source_root
-        File.dirname(__FILE__)
+        File.dirname __FILE__
       end
 
       def build_scaffold!
