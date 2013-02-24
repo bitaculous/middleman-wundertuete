@@ -1,5 +1,3 @@
-# encoding: utf-8
-
 module Middleman
   module Wundertuete
     module Helpers
@@ -9,7 +7,7 @@ module Middleman
         # file. For more information see Paul Irish's blog post “Conditional stylesheets vs CSS hacks?
         # Answer: Neither!” (http://paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither).
         #
-        # attributes - The Hash attributes used to refine the html tag (default: {}).
+        # attributes - The Hash optional attributes used to refine the html tag (default: {}).
         #
         # Returns the generate html as String.
         def html_tag(attributes = {}, &block)

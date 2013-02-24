@@ -1,5 +1,4 @@
 #!/usr/bin/env gem build
-# encoding: utf-8
 
 lib = File.expand_path('../lib', __FILE__)
 $:.unshift(lib) unless $:.include?(lib)
@@ -15,7 +14,7 @@ Gem::Specification.new do |s|
   s.homepage      = 'https://github.com/mkempe/middleman-wundertuete'
   s.version       = Middleman::Wundertuete::VERSION
   s.platform      = Gem::Platform::RUBY
-  s.date          = '2013-02-12'
+  s.date          = '2013-02-24'
   s.licenses      = ['MIT']
 
   s.require_paths = ['lib']
@@ -28,9 +27,9 @@ Gem::Specification.new do |s|
 
   s.add_development_dependency 'rake',    '~> 10.0.3'
 
-  s.add_development_dependency 'bourbon', '~> 3.1.0'
+  s.add_development_dependency 'bourbon', '~> 3.1.1'
 
-  s.add_development_dependency 'rspec',   '~> 2.12.0'
+  s.add_development_dependency 'rspec',   '~> 2.13.0'
 
   s.required_rubygems_version = Gem::Requirement.new('>= 1.3.6')
 end

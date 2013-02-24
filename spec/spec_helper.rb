@@ -1,5 +1,3 @@
-# encoding: utf-8
-
 require 'bundler/setup'
 
 lib = File.expand_path('../../lib', __FILE__)

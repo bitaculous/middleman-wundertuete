@@ -1,5 +1,17 @@
+# Ignore gem files
 *.gem
+
+# Ignore bundler config
 .bundle
+
+# Ignore rvm config
 .rvmrc
+
+# Ignore “Gemfile.lock”
 Gemfile.lock
+
+# Ignore bundler stubs
+bin
+
+# Ignore “pkg” folder
 pkg
