@@ -1,3 +1,5 @@
+# encoding: utf-8
+
 require 'middleman-wundertuete/extension/options'
 
 require 'middleman-wundertuete/helpers/haml_helper'
