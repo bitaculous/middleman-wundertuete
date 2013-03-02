@@ -1,4 +1,4 @@
-[MIDDLEMAN-WUNDERTUETE](https://github.com/mkempe/middleman-wundertuete "MIDDLEMAN-WUNDERTUETE")
+[MIDDLEMAN WUNDERTUETE](https://github.com/mkempe/middleman-wundertuete "Middleman Wundertuete")
 ================================================================================================
 
 A “wundertüte” for [Middleman (Hand-crafted frontend development)](http://middlemanapp.com "Middleman (Hand-crafted frontend development)").
@@ -17,6 +17,6 @@ License
 
 MIT License
 
-“middleman-wundertuete” is released under the MIT license.
+“Middleman Wundertuete” is released under the MIT license.
 
 See “COPYING”.
