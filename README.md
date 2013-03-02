@@ -1,16 +1,16 @@
-[MIDDLEMAN-WUNDERTUETE](https://github.com/mkempe/middleman-wundertuete)
-========================================================================
+[MIDDLEMAN-WUNDERTUETE](https://github.com/mkempe/middleman-wundertuete "MIDDLEMAN-WUNDERTUETE")
+================================================================================================
 
-A “wundertüte” for [Middleman (Hand-crafted frontend development)](http://middlemanapp.com).
+A “wundertüte” for [Middleman (Hand-crafted frontend development)](http://middlemanapp.com "Middleman (Hand-crafted frontend development)").
 
 Credits
 -------
 
-* [jQuery](http://jquery.com)
-* [Modernizr](http://modernizr.com)
-* [yepnope](http://yepnopejs.com)
-* [Bourbon](http://bourbon.io)
-* [normalize.css](http://git.io/normalize)
+* [jQuery](http://jquery.com "jQuery")
+* [Modernizr](http://modernizr.com "Modernizr")
+* [yepnope](http://yepnopejs.com "yepnope")
+* [Bourbon](http://bourbon.io "Bourbon")
+* [normalize.css](http://git.io/normalize "normalize.css")
 
 License
 -------
