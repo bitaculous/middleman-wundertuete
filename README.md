@@ -1,9 +1,6 @@
 [MIDDLEMAN-WUNDERTUETE](https://github.com/mkempe/middleman-wundertuete)
 ========================================================================
 
-Summary
--------
-
 A “wundertüte” for [Middleman (Hand-crafted frontend development)](http://middlemanapp.com).
 
 Credits
