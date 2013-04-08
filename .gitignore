@@ -7,6 +7,12 @@
 # Ignore bundler config
 .bundle
 
+# Ignore ruby gemset config
+.ruby-gemset
+
+# Ignore ruby version config
+.ruby-version
+
 # Ignore rvm config
 .rvmrc
 
