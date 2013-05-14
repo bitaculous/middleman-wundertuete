@@ -14,7 +14,7 @@ Gem::Specification.new do |spec|
   spec.homepage      = 'https://github.com/mkempe/middleman-wundertuete'
   spec.version       = Middleman::Wundertuete::VERSION
   spec.platform      = Gem::Platform::RUBY
-  spec.date          = '2013-05-13'
+  spec.date          = '2013-05-14'
   spec.licenses      = 'MIT'
 
   spec.require_paths = ['lib']
@@ -23,9 +23,11 @@ Gem::Specification.new do |spec|
   spec.executables   = spec.files.grep(%r{^bin/}).map { |file| File.basename file }
   spec.test_files    = spec.files.grep(%r{^(features|spec|test)/})
 
-  spec.add_runtime_dependency 'middleman', '~> 3.0.13'
+  spec.add_runtime_dependency 'middleman', '~> 3.0.14'
 
-  spec.add_runtime_dependency 'bourbon',   '~> 3.1.2'
+  spec.add_runtime_dependency 'bourbon',   '~> 3.1.6'
+
+  spec.add_development_dependency 'rake',    '~> 10.0.4'
 
   spec.add_development_dependency 'bundler', '~> 1.3.5'
 
