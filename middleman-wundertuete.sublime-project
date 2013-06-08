@@ -9,7 +9,7 @@
       ],
       "folder_exclude_patterns": [
         ".bundle",
-        "bin",
+        "exec",
         "pkg"
       ]
     }

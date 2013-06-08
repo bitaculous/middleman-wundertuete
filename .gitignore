@@ -1,7 +1,7 @@
 # Ignore gem files
 *.gem
 
-# Ignore sublime workspace files
+# Ignore sublime workspace configuration
 *.sublime-workspace
 
 # Ignore bundler configuration
@@ -15,6 +15,9 @@
 
 # Ignore rvm configuration
 .rvmrc
+
+# Ignore “exec” folder
+exec
 
 # Ignore “Gemfile.lock”
 Gemfile.lock
