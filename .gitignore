@@ -1,4 +1,4 @@
-# Ignore gem files
+# Ignore generated gem files
 *.gem
 
 # Ignore sublime workspace configuration
@@ -13,10 +13,7 @@
 # Ignore ruby version configuration
 .ruby-version
 
-# Ignore rvm configuration
-.rvmrc
-
-# Ignore “exec” folder
+# Ignore bundler stubs
 exec
 
 # Ignore “Gemfile.lock”
