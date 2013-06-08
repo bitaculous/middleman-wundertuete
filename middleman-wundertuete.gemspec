@@ -22,6 +22,10 @@ Gem::Specification.new do |spec|
   spec.executables   = spec.files.grep(%r{^bin/}).map { |file| File.basename file }
   spec.test_files    = spec.files.grep(%r{^(features|spec|test)/})
 
+  spec.required_ruby_version = '>= 2.0.0'
+
+  spec.required_rubygems_version = Gem::Requirement.new '>= 2.0.0'
+
   spec.add_runtime_dependency 'middleman', '~> 3.0.14'
 
   spec.add_runtime_dependency 'bourbon',   '~> 3.1.6'
@@ -31,6 +35,4 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency 'bundler', '~> 1.3.5'
 
   spec.add_development_dependency 'rspec',   '~> 2.13.0'
-
-  spec.required_rubygems_version = Gem::Requirement.new '>= 2.0.0'
 end
