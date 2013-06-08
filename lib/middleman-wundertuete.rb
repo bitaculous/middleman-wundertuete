@@ -1,5 +1,3 @@
-# encoding: utf-8
-
 require 'middleman-core/extensions'
 require 'middleman-wundertuete/template'
 

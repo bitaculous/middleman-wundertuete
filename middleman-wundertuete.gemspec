@@ -1,5 +1,4 @@
 #!/usr/bin/env gem build
-# encoding: utf-8
 
 lib = File.expand_path('../lib', __FILE__)
 $:.unshift lib unless $:.include? lib
@@ -14,7 +13,7 @@ Gem::Specification.new do |spec|
   spec.homepage      = 'https://github.com/mkempe/middleman-wundertuete'
   spec.version       = Middleman::Wundertuete::VERSION
   spec.platform      = Gem::Platform::RUBY
-  spec.date          = '2013-05-14'
+  spec.date          = '2013-06-08'
   spec.licenses      = 'MIT'
 
   spec.require_paths = ['lib']
