@@ -28,7 +28,7 @@ Gem::Specification.new do |spec|
 
   spec.add_runtime_dependency 'middleman', '~> 3.0.14'
 
-  spec.add_runtime_dependency 'bourbon',   '~> 3.1.6'
+  spec.add_runtime_dependency 'bourbon',   '~> 3.1.7'
 
   spec.add_development_dependency 'rake',    '~> 10.0.4'
 
