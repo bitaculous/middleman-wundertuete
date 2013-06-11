@@ -180,6 +180,19 @@ $base-font-measurement: 16 !default
     #{$property}: $value
 
 /**
+ * @mixin smash in the middle
+ */
+
+@mixin smash-in-the-middle($height)
+  height: $height
+  left: 0
+  margin: -#{$height / 2} auto 0
+  position: absolute
+  text-align: center
+  top: 50%
+  width: 100%
+
+/**
  * @mixin smack in the middle
  */
 
