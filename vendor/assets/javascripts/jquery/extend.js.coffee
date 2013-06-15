@@ -1,4 +1,4 @@
-(($) ->
-  $.fn.present = -> # Helper to test whether an element exists
-    return $(this).length
-)(jQuery)
+$ = jQuery
+
+$.fn.present = -> # Helper to test whether an element exists
+  $(this).length

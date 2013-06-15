@@ -14,7 +14,7 @@ module Middleman
       end
 
       def build_scaffold!
-        template 'template/shared/config.tt', File.join(location, 'config.rb')
+        template 'template/config.tt', File.join(location, 'config.rb')
       end
     end
   end

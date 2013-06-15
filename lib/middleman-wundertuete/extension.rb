@@ -13,9 +13,9 @@ module Middleman
         app.send :include, Helpers # Include helpers
 
         app.after_configuration do # Once configuration is parsed
-          vendor_assets = File.expand_path('../../../vendor/assets', __FILE__)
+          assets = File.expand_path('../../../vendor/assets', __FILE__)
 
-          %w[fonts images javascripts stylesheets].each { |type| sprockets.append_path "#{vendor_assets}/#{type}" }
+          %w[fonts images javascripts stylesheets].each { |type| sprockets.append_path "#{assets}/#{type}" }
         end
       end
 
