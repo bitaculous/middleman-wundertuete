@@ -24,6 +24,9 @@ $base-font-measurement: 16 !default
   .visually-hidden
     @include visually-hidden
 
+  .text-hidden
+    @include text-hidden
+
   .clearfix
     @include micro-clearfix
 
@@ -67,6 +70,13 @@ $base-font-measurement: 16 !default
   padding: 0
   position: absolute
   width: 1px
+
+/**
+ * @mixin text hidden
+ */
+
+@mixin text-hidden
+  text-indent: pem(-10000)
 
   /**
    * Extends the “visually-hidden” class to allow the element to be focusable when
