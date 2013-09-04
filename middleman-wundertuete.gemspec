@@ -26,13 +26,13 @@ Gem::Specification.new do |spec|
 
   spec.required_rubygems_version = Gem::Requirement.new '>= 2.0.0'
 
-  spec.add_runtime_dependency 'middleman', '~> 3.0.14'
+  spec.add_runtime_dependency 'middleman', '~> 3.1.4'
 
   spec.add_runtime_dependency 'bourbon',   '~> 3.1.8'
 
-  spec.add_development_dependency 'rake',    '~> 10.0.4'
+  spec.add_development_dependency 'rake',    '~> 10.1.0'
 
   spec.add_development_dependency 'bundler', '~> 1.3.5'
 
-  spec.add_development_dependency 'rspec',   '~> 2.13.0'
+  spec.add_development_dependency 'rspec',   '~> 2.14.1'
 end
