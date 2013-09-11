@@ -13,7 +13,7 @@ Gem::Specification.new do |spec|
   spec.homepage      = 'https://github.com/nrolla/middleman-wundertuete'
   spec.version       = Middleman::Wundertuete::VERSION
   spec.platform      = Gem::Platform::RUBY
-  spec.date          = '2013-06-15'
+  spec.date          = '2013-09-11'
   spec.licenses      = 'MIT'
 
   spec.require_paths = ['lib']
