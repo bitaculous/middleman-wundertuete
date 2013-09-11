@@ -1,6 +1,6 @@
 #!/usr/bin/env gem build
 
-lib = File.expand_path('../lib', __FILE__)
+lib = File.expand_path '../lib', __FILE__
 $:.unshift lib unless $:.include? lib
 
 require 'middleman-wundertuete/version'
@@ -9,8 +9,8 @@ Gem::Specification.new do |spec|
   spec.name          = 'middleman-wundertuete'
   spec.summary       = 'A “wundertüte” for Middleman (Hand-crafted frontend development).'
   spec.authors       = 'Maik Kempe'
-  spec.email         = 'dev@nrolla.com'
-  spec.homepage      = 'https://github.com/mkempe/middleman-wundertuete'
+  spec.email         = 'mkempe@nrolla.com'
+  spec.homepage      = 'https://github.com/nrolla/middleman-wundertuete'
   spec.version       = Middleman::Wundertuete::VERSION
   spec.platform      = Gem::Platform::RUBY
   spec.date          = '2013-06-15'
@@ -26,9 +26,7 @@ Gem::Specification.new do |spec|
 
   spec.required_rubygems_version = Gem::Requirement.new '>= 2.0.0'
 
-  spec.add_runtime_dependency 'middleman', '~> 3.1.4'
-
-  spec.add_runtime_dependency 'bourbon',   '~> 3.1.8'
+  spec.add_runtime_dependency 'middleman', '~> 3.1.5'
 
   spec.add_development_dependency 'rake',    '~> 10.1.0'
 
