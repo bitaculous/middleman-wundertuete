@@ -9,11 +9,11 @@ Gem::Specification.new do |spec|
   spec.name          = 'middleman-wundertuete'
   spec.summary       = 'A “wundertüte” for Middleman (Hand-crafted frontend development).'
   spec.authors       = 'Maik Kempe'
-  spec.email         = 'mkempe@nrolla.com'
-  spec.homepage      = 'https://github.com/nrolla/middleman-wundertuete'
+  spec.email         = 'mkempe@bitaculous.com'
+  spec.homepage      = 'https://github.com/bitaculous/middleman-wundertuete'
   spec.version       = Middleman::Wundertuete::VERSION
   spec.platform      = Gem::Platform::RUBY
-  spec.date          = '2013-09-11'
+  spec.date          = '2013-10-01'
   spec.licenses      = 'MIT'
 
   spec.require_paths = ['lib']
