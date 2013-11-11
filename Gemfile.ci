@@ -3,7 +3,7 @@
 source 'https://rubygems.org'
 
 group :default do
-  gem 'middleman', '~> 3.1.6'
+  gem 'middleman', '~> 3.2.0'
 end
 
 group :development do
