@@ -2,7 +2,7 @@ module Middleman
   module Wundertuete
     module Helpers
       module LayoutHelper
-        # Public: Helper to generate conditional html tags for IE. We're just conditionally adding
+        # Public: Generates html tag with conditional classes for IE. We're just conditionally adding
         # an extra class onto the html tag. This allows us to keep our browser-specific css in the same
         # file. For more information see Paul Irish's blog post “Conditional stylesheets vs CSS hacks?
         # Answer: Neither!” (http://paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither).
@@ -39,7 +39,7 @@ module Middleman
 
         private
 
-        # Private: Method for merging attributes.
+        # Private: Merges attributes.
         #
         # css_classes - The String CSS classes separated by space.
         # options     - The Hash optional attributes (default: {}).

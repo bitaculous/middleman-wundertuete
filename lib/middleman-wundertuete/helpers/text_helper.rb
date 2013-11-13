@@ -2,7 +2,7 @@ module Middleman
   module Wundertuete
     module Helpers
       module TextHelper
-        # Public: Helper to generate a copyright.
+        # Public: Generates a copyright.
         #
         # copyright_owner - The String naming the copyright owner.
         #
