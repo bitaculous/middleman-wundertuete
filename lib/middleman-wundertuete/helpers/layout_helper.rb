@@ -15,15 +15,15 @@ module Middleman
             attributes.symbolize_keys!
 
             conditional_tags = <<-HTML.gsub(/^\s+/, '').strip
-              <!--[if lt IE 7]> #{tag(:html, merge_attributes('lt-ie9 lt-ie8 lt-ie7', attributes), true)} <![endif]-->
-              <!--[if IE 7]> #{tag(:html, merge_attributes('lt-ie9 lt-ie8', attributes), true)} <![endif]-->
-              <!--[if IE 8]> #{tag(:html, merge_attributes('lt-ie9', attributes), true)} <![endif]-->
-              <!--[if gt IE 8]><!-->
+              <!--[if IE 7]> #{tag(:html, merge_attributes('ie7 ie', attributes), true)} <![endif]-->
+              <!--[if IE 8]> #{tag(:html, merge_attributes('ie8 ie', attributes), true)} <![endif]-->
+              <!--[if IE 9]> #{tag(:html, merge_attributes('ie9 ie', attributes), true)} <![endif]-->
+              <!--[if (gt IE 9)|!(IE)]><!-->
             HTML
 
             html = conditional_tags
 
-            if block_is_haml?(block)
+            if block_is_haml? block
               haml_concat html
 
               haml_tag :html, attributes do
