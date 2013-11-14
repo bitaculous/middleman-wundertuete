@@ -4,26 +4,34 @@ module Middleman
       module TextHelper
         # Public: Generates a copyright.
         #
-        # copyright_owner - The String naming the copyright owner.
+        # owner - The String naming the copyright owner.
         #
         # options - The Hash options (default: {}):
+        #           :symbol       - The String specifying the symbol (optional).
+        #           :claim        - The String specifying the claim (optional).
         #           :initial_year - The String specifying the initial year (optional).
         #
         # Examples
         #
-        #   copyright('Foo') → '©2013 Foo - All rights reserved.'
+        #   copyright('Bob Ross') → '©2013 Bob Ross - All rights reserved.'
         #
-        #   copyright('Foo', { initial_year: '2006' }) → '©2006-2013 Foo - All rights reserved.'
+        #   copyright('Bob Ross', { symbol: '(c)' }) → '(c)2013 Bob Ross - All rights reserved.'
+        #
+        #   copyright('Bob Ross', { claim: 'All your rights are belong to us.' }) → '©2013 Bob Ross - All your rights are belong to us.'
+        #
+        #   copyright('Bob Ross', { initial_year: '2006' }) → '©2006-2013 Bob Ross - All rights reserved.'
         #
         # Returns the copyright as String.
-        def copyright(copyright_owner, options = {})
-          if copyright_owner
-            time = Time.new
+        def copyright(owner, options = {})
+          if owner
+            time         = Time.new
             current_year = time.year
 
-            year_part = options[:initial_year] ? "©#{options[:initial_year]}-#{current_year}" : "©#{current_year}"
+            symbol    = options[:symbol] || '©'
+            claim     = options[:claim] || 'All rights reserved.'
+            year_part = options[:initial_year] ? "#{options[:initial_year]}-#{current_year}" : current_year
 
-            "#{year_part} #{copyright_owner} - All rights reserved."
+            "#{symbol}#{year_part} #{owner} - #{claim}"
           end
         end
       end
