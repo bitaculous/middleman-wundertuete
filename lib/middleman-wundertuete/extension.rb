@@ -11,12 +11,6 @@ module Middleman
         yield settings if block_given?
 
         app.send :include, Helpers # Include helpers
-
-        app.after_configuration do # Once configuration is loaded
-          assets = File.expand_path('../../../vendor/assets', __FILE__)
-
-          %w[fonts images javascripts stylesheets].each { |type| sprockets.append_path "#{assets}/#{type}" }
-        end
       end
 
       alias :included :registered
