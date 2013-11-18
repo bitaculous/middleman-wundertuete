@@ -1,5 +1,5 @@
 require 'middleman-wundertuete/extension/options'
-require 'middleman-wundertuete/helpers/layout_helper'
+require 'middleman-wundertuete/helpers/tag_helper'
 require 'middleman-wundertuete/helpers/text_helper'
 
 module Middleman
@@ -23,7 +23,7 @@ module Middleman
     end
 
     module Helpers # Helpers for use within templates and layouts
-      include Middleman::Wundertuete::Helpers::LayoutHelper
+      include Middleman::Wundertuete::Helpers::TagHelper
       include Middleman::Wundertuete::Helpers::TextHelper
     end
   end
