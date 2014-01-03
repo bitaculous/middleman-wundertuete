@@ -13,7 +13,7 @@ Gem::Specification.new do |spec|
   spec.homepage      = 'https://github.com/bitaculous/middleman-wundertuete'
   spec.version       = Middleman::Wundertuete::VERSION
   spec.platform      = Gem::Platform::RUBY
-  spec.date          = '2013-12-31'
+  spec.date          = '2014-01-03'
   spec.licenses      = 'MIT'
 
   spec.require_paths = ['lib']
@@ -28,7 +28,7 @@ Gem::Specification.new do |spec|
 
   spec.add_runtime_dependency 'middleman', '~> 3.2.1'
 
-  spec.add_development_dependency 'rake', '~> 10.1.0'
+  spec.add_development_dependency 'rake', '~> 10.1.1'
 
   spec.add_development_dependency 'bundler', '~> 1.5.1'
 
