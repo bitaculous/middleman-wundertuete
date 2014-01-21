@@ -1,7 +1,7 @@
 [MIDDLEMAN WUNDERTUETE](https://github.com/bitaculous/middleman-wundertuete "Middleman Wundertuete")
 ====================================================================================================
 
-A “wundertüte” for [Middleman (Hand-crafted frontend development)](http://middlemanapp.com "Middleman (Hand-crafted frontend development)").
+**A “wundertüte” for [Middleman (Hand-crafted frontend development)](http://middlemanapp.com "Middleman (Hand-crafted frontend development)").**
 
 Code Status
 -----------
@@ -12,8 +12,4 @@ Code Status
 License
 -------
 
-MIT License
-
-“Middleman Wundertuete” is released under the MIT license.
-
-See “COPYING”.
+“Middleman Wundertuete” is released under the MIT License, see “LICENSE”.
