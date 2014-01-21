@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.summary       = 'A “wundertüte” for Middleman (Hand-crafted frontend development).'
   spec.authors       = 'Maik Kempe'
   spec.email         = 'mkempe@bitaculous.com'
-  spec.homepage      = 'https://github.com/bitaculous/middleman-wundertuete'
+  spec.homepage      = 'http://bitaculous.github.io/middleman-wundertuete'
   spec.version       = Middleman::Wundertuete::VERSION
   spec.platform      = Gem::Platform::RUBY
   spec.licenses      = 'MIT'
