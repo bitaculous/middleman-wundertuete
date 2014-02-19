@@ -15,11 +15,9 @@ Gem::Specification.new do |spec|
   spec.platform      = Gem::Platform::RUBY
   spec.licenses      = 'MIT'
 
-  spec.require_paths = ['lib']
-
-  spec.files         = `git ls-files`.split($/)
-  spec.executables   = spec.files.grep(%r{^bin/}).map { |file| File.basename file }
-  spec.test_files    = spec.files.grep(%r{^(features|spec|test)/})
+  spec.files         = `git ls-files`.split($\)
+  spec.executables   = spec.files.grep(/^bin/).map { |file| File.basename file }
+  spec.test_files    = spec.files.grep(/^(features|spec|test)/)
 
   spec.required_ruby_version = '>= 2.0.0'
 
@@ -29,7 +27,7 @@ Gem::Specification.new do |spec|
 
   spec.add_development_dependency 'rake', '~> 10.1.1'
 
-  spec.add_development_dependency 'bundler', '~> 1.5.2'
+  spec.add_development_dependency 'bundler', '~> 1.5.3'
 
   spec.add_development_dependency 'rspec', '~> 2.14.1'
 end
