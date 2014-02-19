@@ -8,7 +8,7 @@ require 'middleman-wundertuete/version'
 Gem::Specification.new do |spec|
   spec.name          = 'middleman-wundertuete'
   spec.summary       = 'A “wundertüte” for Middleman (Hand-crafted frontend development).'
-  spec.authors       = 'Maik Kempe'
+  spec.author        = 'Maik Kempe'
   spec.email         = 'mkempe@bitaculous.com'
   spec.homepage      = 'http://bitaculous.github.io/middleman-wundertuete'
   spec.version       = Middleman::Wundertuete::VERSION
