@@ -1,7 +1,7 @@
-# Ignore generated gem files
+# Ignore gem files
 *.gem
 
-# Ignore sublime workspace configuration
+# Ignore sublime workspace files
 *.sublime-workspace
 
 # Ignore bundler configuration
@@ -16,8 +16,8 @@
 # Ignore bundler stubs
 exec
 
-# Ignore “Gemfile.lock”
+# Ignore `Gemfile.lock`
 Gemfile.lock
 
-# Ignore “pkg” folder
+# Ignore `pkg` folder
 pkg
