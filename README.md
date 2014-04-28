@@ -7,4 +7,4 @@
 License
 -------
 
-Middleman Wundertuete is released under the MIT License, see [LICENSE](https://raw.githubusercontent.com/bitaculous/middleman-wundertuete/master/LICENSE "LICENSE").
+Middleman Wundertuete is released under the MIT License, see [LICENSE](https://raw.githubusercontent.com/bitaculous/middleman-wundertuete/master/LICENSE "License").
