@@ -3,7 +3,7 @@
 
 **A “wundertüte” for [Middleman (Hand-crafted frontend development)](http://middlemanapp.com "Middleman (Hand-crafted frontend development)").**
 
-[![Travis CI Status](https://travis-ci.org/bitaculous/middleman-wundertuete.svg)](http://travis-ci.org/emberjs/ember.js) [![Gemnasium Status](https://gemnasium.com/bitaculous/middleman-wundertuete.svg)](https://gemnasium.com/bitaculous/middleman-wundertuete)
+[![Travis CI Status](https://travis-ci.org/bitaculous/middleman-wundertuete.svg)](http://travis-ci.org/bitaculous/middleman-wundertuete) [![Gemnasium Status](https://gemnasium.com/bitaculous/middleman-wundertuete.svg)](https://gemnasium.com/bitaculous/middleman-wundertuete)
 
 License
 -------
