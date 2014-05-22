@@ -4,6 +4,25 @@
 
 [![Travis CI Status](https://travis-ci.org/bitaculous/middleman-wundertuete.svg)](http://travis-ci.org/bitaculous/middleman-wundertuete) [![Gemnasium Status](https://gemnasium.com/bitaculous/middleman-wundertuete.svg)](https://gemnasium.com/bitaculous/middleman-wundertuete)
 
+Installation
+------------
+
+1. Add assetify to your Gemfile:
+
+    ```
+    group :middleman do
+      gem 'assetify', github: 'bitaculous/middleman-wundertuete'
+    end
+    ```
+
+2. Run `bundle install`
+
+3. Activate the “wundertuete” in your middleman config:
+
+    ```
+    activate :wundertuete
+    ```
+
 License
 -------
 
