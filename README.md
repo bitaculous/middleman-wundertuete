@@ -1,17 +1,19 @@
-# [MIDDLEMAN WUNDERTUETE](http://bitaculous.github.io/middleman-wundertuete "Middleman Wundertuete")
+[Middleman Wundertuete](http://bitaculous.github.io/middleman-wundertuete "A “wundertüte” for Middleman (Hand-crafted frontend development).")
+==============================================================================================================================================
 
 **A “wundertüte” for [Middleman (Hand-crafted frontend development)](http://middlemanapp.com "Middleman (Hand-crafted frontend development)").**
 
-[![Travis CI Status](https://travis-ci.org/bitaculous/middleman-wundertuete.svg)](http://travis-ci.org/bitaculous/middleman-wundertuete) [![Gemnasium Status](https://gemnasium.com/bitaculous/middleman-wundertuete.svg)](https://gemnasium.com/bitaculous/middleman-wundertuete)
+[![Travis CI Status](https://travis-ci.org/bitaculous/middleman-wundertuete.svg)](http://travis-ci.org/bitaculous/middleman-wundertuete)
+[![Gemnasium Status](https://gemnasium.com/bitaculous/middleman-wundertuete.svg)](https://gemnasium.com/bitaculous/middleman-wundertuete)
 
 Installation
 ------------
 
-1. Add assetify to your Gemfile:
+1. Add middleman wundertuete to your Gemfile:
 
     ```
     group :middleman do
-      gem 'assetify', github: 'bitaculous/middleman-wundertuete'
+      gem 'middleman-wundertuete', github: 'bitaculous/middleman-wundertuete'
     end
     ```
 
@@ -26,4 +28,5 @@ Installation
 License
 -------
 
-Middleman Wundertuete is released under the MIT License (MIT), see [LICENSE](https://raw.githubusercontent.com/bitaculous/middleman-wundertuete/master/LICENSE "License").
+[Middleman Wundertuete](http://bitaculous.github.io/middleman-wundertuete "A “wundertüte” for Middleman (Hand-crafted frontend development).")
+is released under the MIT License (MIT), see [LICENSE](https://raw.githubusercontent.com/bitaculous/middleman-wundertuete/master/LICENSE "License").
