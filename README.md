@@ -41,7 +41,7 @@ immediately yanked and / or a new version should be immediately released that re
 License
 -------
 
-Middleman Wundertuete is released under the [MIT License (MIT)], see [LICENSE].
+[Middleman Wundertuete] is released under the [MIT License (MIT)], see [LICENSE].
 
 [Gemnasium Status]: http://img.shields.io/gemnasium/bitaculous/middleman-wundertuete.svg?style=flat "Gemnasium Status"
 [Gemnasium]: https://gemnasium.com/bitaculous/middleman-wundertuete "Middleman Wundertuete at Gemnasium"
