@@ -23,9 +23,9 @@ Gem::Specification.new do |spec|
 
   spec.required_rubygems_version = '~> 2.4'
 
-  spec.add_runtime_dependency 'middleman', '~> 3.3.3'
+  spec.add_runtime_dependency 'middleman', '~> 3.3.4'
 
-  spec.add_development_dependency 'bundler', '~> 1.6.3'
+  spec.add_development_dependency 'bundler', '~> 1.6.5'
 
   spec.add_development_dependency 'rake', '~> 10.3.2'
 
