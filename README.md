@@ -9,7 +9,7 @@
 Installation
 ------------
 
-1. Add middleman wundertuete to your Gemfile:
+1. Add [Middleman Wundertuete] to your Gemfile:
 
     ```
     group :middleman do
@@ -19,7 +19,7 @@ Installation
 
 2. Run `bundle install`
 
-3. Activate the “wundertuete” in your middleman config:
+3. Activate the “Wundertuete” in your middleman config:
 
     ```
     activate :wundertuete
