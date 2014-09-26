@@ -3,14 +3,13 @@
     {
       "name": "middleman-wundertuete",
       "path": "./",
-      "file_exclude_patterns": [
-        "*.sublime-workspace",
-        ".keep"
-      ],
       "folder_exclude_patterns": [
         ".bundle",
         "exec",
         "pkg"
+      ],
+      "file_exclude_patterns": [
+        ".keep"
       ]
     }
   ]
