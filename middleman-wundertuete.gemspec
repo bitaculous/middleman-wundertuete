@@ -19,11 +19,11 @@ Gem::Specification.new do |spec|
   spec.executables   = spec.files.grep(/^bin/).map { |file| File.basename file }
   spec.test_files    = spec.files.grep(/^(features|spec|test)/)
 
-  spec.required_ruby_version = '~> 2.0'
+  spec.required_ruby_version = '~> 2.1'
 
   spec.required_rubygems_version = '~> 2.4'
 
-  spec.add_runtime_dependency 'middleman', '~> 3.3.6'
+  spec.add_runtime_dependency 'middleman-core', '~> 3.3.6'
 
   spec.add_development_dependency 'bundler', '~> 1.7.3'
 
