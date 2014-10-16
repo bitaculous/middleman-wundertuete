@@ -10,10 +10,9 @@ Gem::Specification.new do |spec|
   spec.summary     = 'A “Wundertüte” for Middleman.'
   spec.author      = 'Maik Kempe'
   spec.email       = 'mkempe@bitaculous.com'
-  spec.homepage    = 'http://bitaculous.github.io/middleman-wundertuete'
-  spec.version     = Middleman::Wundertuete::VERSION
-  spec.platform    = Gem::Platform::RUBY
+  spec.homepage    = 'https://bitaculous.github.io/middleman-wundertuete/'
   spec.license     = 'MIT'
+  spec.version     = Middleman::Wundertuete::VERSION
 
   spec.files       = `git ls-files`.split($\)
   spec.executables = spec.files.grep(/^bin/).map { |file| File.basename file }
@@ -25,7 +24,7 @@ Gem::Specification.new do |spec|
 
   spec.add_runtime_dependency 'middleman-core', '~> 3.3.6'
 
-  spec.add_development_dependency 'bundler', '~> 1.7.3'
+  spec.add_development_dependency 'bundler', '~> 1.7'
 
   spec.add_development_dependency 'rake', '~> 10.3.2'
 
