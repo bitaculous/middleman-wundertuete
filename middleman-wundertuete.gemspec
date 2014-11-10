@@ -22,7 +22,7 @@ Gem::Specification.new do |spec|
 
   spec.required_rubygems_version = '~> 2.4'
 
-  spec.add_runtime_dependency 'middleman-core', '~> 3.3.6'
+  spec.add_runtime_dependency 'middleman-core', '~> 3.3.7'
 
   spec.add_development_dependency 'bundler', '~> 1.7'
 
