@@ -19,7 +19,7 @@ Installation
 
 2. Run `bundle install`
 
-3. Activate the “Wundertuete” in your middleman config:
+3. Activate the “Wundertuete” in your Middleman configuration:
 
     ```
     activate :wundertuete
