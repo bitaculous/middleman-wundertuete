@@ -6,15 +6,15 @@ $:.unshift lib unless $:.include? lib
 require 'middleman-wundertuete/version'
 
 Gem::Specification.new 'middleman-wundertuete', Middleman::Wundertuete::VERSION do |spec|
-  spec.summary     = 'A “Wundertüte” for Middleman.'
-  spec.author      = 'Maik Kempe'
-  spec.email       = 'mkempe@bitaculous.com'
-  spec.homepage    = 'https://bitaculous.github.io/middleman-wundertuete/'
-  spec.license     = 'MIT'
-
-  spec.files       = `git ls-files`.split($\)
-  spec.executables = spec.files.grep(/^bin/).map { |file| File.basename file }
-  spec.test_files  = spec.files.grep(/^(features|spec|test)/)
+  spec.summary          = 'A “Wundertüte” for Middleman.'
+  spec.author           = 'Maik Kempe'
+  spec.email            = 'mkempe@bitaculous.com'
+  spec.homepage         = 'https://bitaculous.github.io/middleman-wundertuete/'
+  spec.license          = 'MIT'
+  spec.files            = `git ls-files`.split($\)
+  spec.executables      = spec.files.grep(/^bin/).map { |file| File.basename file }
+  spec.test_files       = spec.files.grep(/^(features|spec|test)/)
+  spec.extra_rdoc_files = ['LICENSE', 'README.md']
 
   spec.required_ruby_version = '~> 2.1'
 
