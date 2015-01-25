@@ -1,10 +1,9 @@
 [Middleman Wundertuete]
 =======================
 
-**A “Wundertüte” for [Middleman].**
+[![Travis CI Status][Travis CI Status]][Travis CI] [![Gemnasium Status][Gemnasium Status]][Gemnasium]
 
-[![Travis CI Status][Travis CI Status]][Travis CI]
-[![Gemnasium Status][Gemnasium Status]][Gemnasium]
+**A “Wundertüte” for [Middleman].**
 
 Installation
 ------------
@@ -24,6 +23,23 @@ Installation
     ```
     activate :wundertuete
     ```
+
+Development
+-----------
+
+### Specs
+
+Use the `rspec` command to run the specs:
+
+```
+$ rspec
+```
+
+or via [Guard]:
+
+```
+$ guard -g spec
+```
 
 Bug Reports
 -----------
@@ -45,6 +61,7 @@ License
 
 [Gemnasium]: https://gemnasium.com/bitaculous/middleman-wundertuete "Middleman Wundertuete at Gemnasium"
 [Gemnasium Status]: https://img.shields.io/gemnasium/bitaculous/middleman-wundertuete.svg?style=flat "Gemnasium Status"
+[Guard]: http://guardgem.org "A command line tool to easily handle events on file system modifications."
 [here]: https://github.com/bitaculous/middleman-wundertuete/issues "Github Issues"
 [LICENSE]: https://raw.githubusercontent.com/bitaculous/middleman-wundertuete/master/LICENSE "License"
 [Middleman]: http://middlemanapp.com "Hand-crafted frontend development"
