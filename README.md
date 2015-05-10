@@ -8,7 +8,7 @@
 Installation
 ------------
 
-1. Add [Middleman Wundertuete] to your Gemfile:
+1. Add Middleman Wundertuete to your Gemfile:
 
     ```
     group :middleman do
@@ -18,7 +18,7 @@ Installation
 
 2. Run `bundle install`
 
-3. Activate the “Wundertuete” in your Middleman configuration:
+3. Activate the Lucky Bag in your Middleman configuration:
 
     ```
     activate :wundertuete
