@@ -3,7 +3,7 @@
 
 [![Travis CI Status][Travis CI Status]][Travis CI] [![Gemnasium Status][Gemnasium Status]][Gemnasium]
 
-**A “Wundertüte” for [Middleman].**
+**A Lucky Bag for [Middleman].**
 
 Installation
 ------------
@@ -65,7 +65,7 @@ License
 [here]: https://github.com/bitaculous/middleman-wundertuete/issues "Github Issues"
 [LICENSE]: https://raw.githubusercontent.com/bitaculous/middleman-wundertuete/master/LICENSE "License"
 [Middleman]: http://middlemanapp.com "Hand-crafted frontend development"
-[Middleman Wundertuete]: https://bitaculous.github.io/middleman-wundertuete/ "A “Wundertüte” for Middleman."
+[Middleman Wundertuete]: https://bitaculous.github.io/middleman-wundertuete/ "A Lucky Bag for Middleman."
 [MIT License (MIT)]: http://opensource.org/licenses/MIT "The MIT License (MIT)"
 [Semantic Versioning 2.0.0]: http://semver.org "Semantic Versioning 2.0.0"
 [Travis CI]: https://travis-ci.org/bitaculous/middleman-wundertuete "Middleman Wundertuete at Travis CI"
