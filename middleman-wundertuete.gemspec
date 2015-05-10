@@ -6,7 +6,7 @@ $:.unshift lib unless $:.include? lib
 require 'middleman-wundertuete/version'
 
 Gem::Specification.new 'middleman-wundertuete', Middleman::Wundertuete::VERSION do |spec|
-  spec.summary          = 'A Lucky Bag for Middleman.'
+  spec.summary          = 'A Lucky Bag for Middleman'
   spec.author           = 'Maik Kempe'
   spec.email            = 'mkempe@bitaculous.com'
   spec.homepage         = 'https://bitaculous.github.io/middleman-wundertuete/'
