@@ -19,7 +19,7 @@ Gem::Specification.new 'middleman-wundertuete', Middleman::Wundertuete::VERSION 
 
   spec.add_runtime_dependency 'middleman-core', '~> 3.3.12'
 
-  spec.add_development_dependency 'bundler', '~> 1.7'
+  spec.add_development_dependency 'bundler', '~> 1.10'
   spec.add_development_dependency 'rake',    '~> 10.4.2'
-  spec.add_development_dependency 'rspec',   '~> 3.2.0'
+  spec.add_development_dependency 'rspec',   '~> 3.3.0'
 end
