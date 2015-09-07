@@ -1,10 +1,24 @@
 #!/usr/bin/env rake
 
-require 'bundler/setup'
-require 'bundler/gem_tasks'
+begin
+  require 'bundler/setup'
+rescue LoadError
+  puts 'You must `gem install bundler` and `bundle install` to run rake tasks.'
+end
 
-require 'rspec/core/rake_task'
+# === Bundler ===
 
-RSpec::Core::RakeTask.new :spec
+Bundler::GemHelper.install_tasks
 
-task default: :spec
+# === Cucumber ===
+
+require 'cucumber/rake/task'
+
+Cucumber::Rake::Task.new(:test, 'Run features that should pass') do |task|
+  task.cucumber_opts = '--color --tags ~@wip --strict --format pretty'
+end
+
+# === Configuration ===
+
+# Run Cucumber as default task.
+task default: :test
