@@ -1,7 +1,10 @@
 require 'middleman-core/templates'
 
 module Middleman
-  module Wundertuete
+  module Wundertuete #:nodoc:
+    # = UuidValidator
+    #
+    # The Template class, inherited from `Middleman::Templates::Base`.
     class Template < Middleman::Templates::Base
       class_option 'css_dir',    default: 'assets/stylesheets', desc: 'The path to the CSS files.'
       class_option 'images_dir', default: 'assets/images',      desc: 'The path to the image files.'
@@ -11,6 +14,7 @@ module Middleman
         File.join File.dirname(__FILE__), 'template'
       end
 
+      # rubocop:disable Metrics/AbcSize
       def build_scaffold!
         template  'config.tt', File.join(location, 'config.rb')
         directory 'source',    File.join(location, 'source')

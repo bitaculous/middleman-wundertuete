@@ -9,11 +9,12 @@ gemspec
 # == Development ===
 
 group :development do
-  gem 'guard-rspec', '~> 4.6.4', require: false
+  gem 'guard',          '~> 2.13.0', require: false
+  gem 'guard-cucumber', '~> 1.6.0',  require: false
 end
 
-group :misc do
-  gem 'growl', '~> 1.0.3', require: RUBY_PLATFORM.include?('darwin') && 'growl'
+# == Test ===
 
-  gem 'rb-fsevent', '~> 0.9.6', require: RUBY_PLATFORM.include?('darwin') && 'rb-fsevent'
+group :test do
+  gem 'rubocop', '~> 0.34.0', require: false
 end

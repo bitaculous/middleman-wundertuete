@@ -1,7 +1,7 @@
 module Middleman
   module Wundertuete
     module Helpers
-      module TagHelper
+      module TagHelper #:nodoc:
         # Public: Generates html tag with conditional classes for IE. We're just conditionally adding
         # an extra class onto the html tag. This allows us to keep our browser-specific css in the same
         # file. For more information see Paul Irish's blog post “Conditional stylesheets vs CSS hacks?
@@ -10,6 +10,9 @@ module Middleman
         # attributes - The Hash optional attributes used to refine the html tag (default: {}).
         #
         # Returns the generate html as String.
+        #
+        # rubocop:disable Metrics/AbcSize
+        # rubocop:disable Metrics/MethodLength
         def html_tag(attributes = {}, &block)
           attributes.symbolize_keys!
 

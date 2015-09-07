@@ -1,7 +1,7 @@
 module Middleman
   module Wundertuete
     module Helpers
-      module TextHelper
+      module TextHelper #:nodoc:
         # Public: Handleize an input.
         #
         # input     - The String input.
@@ -14,7 +14,7 @@ module Middleman
         #
         # Returns the handleized String.
         def handleize(input, delimiter = '-')
-          input.to_str.gsub(/[ \_\-\/]/, delimiter).downcase
+          input.to_str.gsub(%r{[ \_\-\/]}, delimiter).downcase
         end
 
         # Public: Generates a copyright.
@@ -42,16 +42,15 @@ module Middleman
         #
         # Returns the copyright String.
         def copyright(owner, options = {})
-          if owner
-            time         = Time.new
-            current_year = time.year
+          return unless owner
 
-            symbol    = options[:symbol] || '©'
-            claim     = options[:claim] || 'All rights reserved.'
-            year_part = options[:initial_year] ? "#{options[:initial_year]}-#{current_year}" : current_year
+          time         = Time.new
+          current_year = time.year
+          symbol       = options[:symbol] || '©'
+          claim        = options[:claim] || 'All rights reserved.'
+          year_part    = options[:initial_year] ? "#{options[:initial_year]}-#{current_year}" : current_year
 
-            "#{symbol}#{year_part} #{owner} - #{claim}"
-          end
+          "#{symbol}#{year_part} #{owner} - #{claim}"
         end
       end
     end

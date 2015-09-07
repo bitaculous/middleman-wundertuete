@@ -18,7 +18,16 @@ Cucumber::Rake::Task.new(:test, 'Run features that should pass') do |task|
   task.cucumber_opts = '--color --tags ~@wip --strict --format pretty'
 end
 
+# === RuboCop ===
+
+require 'rubocop/rake_task'
+
+RuboCop::RakeTask.new(:rubocop) do |task|
+  # Don't abort Rake on failure.
+  task.fail_on_error = false
+end
+
 # === Configuration ===
 
-# Run Cucumber as default task.
-task default: :test
+# Run Cucumber tests and RuboCop as default task.
+task default: [:test, :rubocop]
