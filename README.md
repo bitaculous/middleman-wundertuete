@@ -27,19 +27,21 @@ Installation
 Development
 -----------
 
-### Specs
+### Run tests
 
-Use the `rspec` command to run the specs:
-
-```
-$ rspec
-```
+Run `cucumber`.
 
 or via [Guard]:
 
 ```
-$ guard -g spec
+$ guard -g test
 ```
+
+### Run [RuboCop]
+
+Run `rubocop`.
+
+To run tests and RuboCop altogether, run `rake`.
 
 Bug Reports
 -----------
