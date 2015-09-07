@@ -10,7 +10,7 @@ Installation
 
 1. Add Middleman Wundertuete to your Gemfile:
 
-    ```
+    ```ruby
     group :middleman do
       gem 'middleman-wundertuete', github: 'bitaculous/middleman-wundertuete'
     end
@@ -20,14 +20,14 @@ Installation
 
 3. Activate the Lucky Bag in your Middleman configuration:
 
-    ```
+    ```ruby
     activate :wundertuete
     ```
 
 Development
 -----------
 
-### Run tests
+### Run [Cucumber]
 
 Run `cucumber`.
 
@@ -61,6 +61,7 @@ License
 
 [Middleman Wundertuete] is released under the [MIT License (MIT)], see [LICENSE].
 
+[Cucumber]: https://cucumber.io "Simple, human collaboration"
 [Gemnasium]: https://gemnasium.com/bitaculous/middleman-wundertuete "Middleman Wundertuete at Gemnasium"
 [Gemnasium Status]: https://img.shields.io/gemnasium/bitaculous/middleman-wundertuete.svg?style=flat "Gemnasium Status"
 [Guard]: http://guardgem.org "A command line tool to easily handle events on file system modifications."
@@ -69,6 +70,7 @@ License
 [Middleman]: http://middlemanapp.com "Hand-crafted frontend development"
 [Middleman Wundertuete]: https://bitaculous.github.io/middleman-wundertuete/ "A Lucky Bag for Middleman"
 [MIT License (MIT)]: http://opensource.org/licenses/MIT "The MIT License (MIT)"
+[RuboCop]: https://github.com/bbatsov/rubocop "A Ruby static code analyzer, based on the community Ruby style guide."
 [Semantic Versioning 2.0.0]: http://semver.org "Semantic Versioning 2.0.0"
 [Travis CI]: https://travis-ci.org/bitaculous/middleman-wundertuete "Middleman Wundertuete at Travis CI"
 [Travis CI Status]: https://img.shields.io/travis/bitaculous/middleman-wundertuete.svg?style=flat "Travis CI Status"
