@@ -15,15 +15,15 @@ Style/FileName:
 
 Style/SingleSpaceBeforeFirstArg:
   Description: >-
-                 Checks that exactly one space is used between a method name
-                 and the first argument for method calls without parentheses.
+                 Checks that exactly one space is used between a method name and the first argument for method calls
+                 without parentheses.
   Enabled: false
 
 Style/TrailingBlankLines:
-  Description: "Checks trailing blank lines and final newline."
-  StyleGuide: "https://github.com/bbatsov/ruby-style-guide#newline-eof"
+  Description: 'Checks trailing blank lines and final newline.'
+  StyleGuide: 'https://github.com/bbatsov/ruby-style-guide#newline-eof'
   Enabled: false
 
 Metrics/LineLength:
-  Description: "Limit lines to 120 characters with 10 characters as buffer."
+  Description: 'Limit lines to 120 characters with 10 characters as buffer.'
   Max: 130
