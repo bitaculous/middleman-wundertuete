@@ -1,9 +1,6 @@
 #!/usr/bin/env gem build
 
-lib = File.expand_path '../lib', __FILE__
-$:.unshift lib unless $:.include? lib
-
-require 'middleman-wundertuete/version'
+require File.expand_path '../lib/middleman-wundertuete/version', __FILE__
 
 Gem::Specification.new 'middleman-wundertuete', Middleman::Wundertuete::VERSION do |spec|
   spec.summary          = 'A Lucky Bag for Middleman'
@@ -17,7 +14,7 @@ Gem::Specification.new 'middleman-wundertuete', Middleman::Wundertuete::VERSION 
   spec.required_ruby_version     = '~> 2.1'
   spec.required_rubygems_version = '~> 2.4'
 
-  spec.add_runtime_dependency 'middleman-core', '~> 3.3.12'
+  spec.add_runtime_dependency 'middleman-core', '~> 3.4.0'
 
   spec.add_development_dependency 'bundler', '~> 1.10'
   spec.add_development_dependency 'rake',    '~> 10.4.2'
