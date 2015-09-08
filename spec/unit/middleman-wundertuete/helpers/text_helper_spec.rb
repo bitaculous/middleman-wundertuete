@@ -19,17 +19,17 @@ RSpec.describe TextHelper do
     let(:current_year) { time.year }
     let(:divider)      { '-' }
     let(:copyright)    { 'All rights reserved.' }
-
     let(:owner)        { 'Bob Ross' }
     let(:symbol)       { '(c)' }
     let(:claim)        { 'All your rights are belong to us.' }
     let(:initial_year) { 2014 }
 
+    # rubocop:disable Metrics/LineLength
     it 'generates a copyright' do
       expect(helper.copyright(owner)).to eq "©#{current_year} #{owner} #{divider} #{copyright}"
-      expect(helper.copyright(owner, { symbol: symbol })).to eq "#{symbol}#{current_year} #{owner} #{divider} #{copyright}"
-      expect(helper.copyright(owner, { claim: claim })).to eq "©#{current_year} #{owner} #{divider} #{claim}"
-      expect(helper.copyright(owner, { initial_year: initial_year })).to eq "©#{initial_year}-#{current_year} #{owner} #{divider} #{copyright}"
+      expect(helper.copyright(owner, symbol: symbol)).to eq "#{symbol}#{current_year} #{owner} #{divider} #{copyright}"
+      expect(helper.copyright(owner, claim: claim)).to eq "©#{current_year} #{owner} #{divider} #{claim}"
+      expect(helper.copyright(owner, initial_year: initial_year)).to eq "©#{initial_year}-#{current_year} #{owner} #{divider} #{copyright}"
     end
   end
 end
