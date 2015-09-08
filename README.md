@@ -12,9 +12,7 @@ Installation
 1. Add Middleman Wundertuete to your Gemfile:
 
     ```ruby
-    group :middleman do
-      gem 'middleman-wundertuete', github: 'bitaculous/middleman-wundertuete'
-    end
+    gem 'middleman-wundertuete', github: 'bitaculous/middleman-wundertuete'
     ```
 
 2. Run `bundle` to install all dependencies with [Bundler]
