@@ -2,6 +2,8 @@ branches:
   except:
     - gh-pages
 cache: bundler
+env:
+  - COVERAGE=true
 language: ruby
 notifications:
   email:

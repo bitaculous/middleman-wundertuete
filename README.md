@@ -1,7 +1,8 @@
 [Middleman Wundertuete]
 =======================
 
-[![Travis CI Status][Travis CI Status]][Travis CI] [![Gemnasium Status][Gemnasium Status]][Gemnasium]
+[![Travis CI Status][Travis CI Status]][Travis CI]
+[![Gemnasium Status][Gemnasium Status]][Gemnasium]
 
 **A Lucky Bag for [Middleman]**
 
@@ -16,7 +17,7 @@ Installation
     end
     ```
 
-2. Run `bundle install`
+2. Run `bundle` to install all dependencies with [Bundler]
 
 3. Activate the Lucky Bag in your Middleman configuration:
 
@@ -27,21 +28,35 @@ Installation
 Development
 -----------
 
+### Run specs with [RSpec]
+
+Run `rspec`.
+
+or via [Guard]:
+
+```
+$ guard -g spec
+```
+
 ### Run [Cucumber]
 
 Run `cucumber`.
 
-or via [Guard]:
+or via Guard:
 
 ```
 $ guard -g test
 ```
 
+### See Test Coverage
+
+Run `COVERAGE=true rake`.
+
 ### Run [RuboCop]
 
 Run `rubocop`.
 
-To run tests and RuboCop altogether, run `rake`.
+To run all specs, Cucumber and RuboCop altogether, run `rake`.
 
 Bug Reports
 -----------
@@ -61,6 +76,7 @@ License
 
 [Middleman Wundertuete] is released under the [MIT License (MIT)], see [LICENSE].
 
+[Bundler]: http://bundler.io "The best way to manage a Ruby application's gems"
 [Cucumber]: https://cucumber.io "Simple, human collaboration"
 [Gemnasium]: https://gemnasium.com/bitaculous/middleman-wundertuete "Middleman Wundertuete at Gemnasium"
 [Gemnasium Status]: https://img.shields.io/gemnasium/bitaculous/middleman-wundertuete.svg?style=flat "Gemnasium Status"
@@ -70,6 +86,7 @@ License
 [Middleman]: http://middlemanapp.com "Hand-crafted frontend development"
 [Middleman Wundertuete]: https://bitaculous.github.io/middleman-wundertuete/ "A Lucky Bag for Middleman"
 [MIT License (MIT)]: http://opensource.org/licenses/MIT "The MIT License (MIT)"
+[RSpec]: http://rspec.info "Behaviour Driven Development for Ruby"
 [RuboCop]: https://github.com/bbatsov/rubocop "A Ruby static code analyzer, based on the community Ruby style guide."
 [Semantic Versioning 2.0.0]: http://semver.org "Semantic Versioning 2.0.0"
 [Travis CI]: https://travis-ci.org/bitaculous/middleman-wundertuete "Middleman Wundertuete at Travis CI"

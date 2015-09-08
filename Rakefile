@@ -10,6 +10,12 @@ end
 
 Bundler::GemHelper.install_tasks
 
+# === RSpec ===
+
+require 'rspec/core/rake_task'
+
+RSpec::Core::RakeTask.new :spec
+
 # === Cucumber ===
 
 require 'cucumber/rake/task'
@@ -29,5 +35,5 @@ end
 
 # === Configuration ===
 
-# Run Cucumber tests and RuboCop as default task.
-task default: [:test, :rubocop]
+# Run all specs, Cucumber tests and RuboCop as default task.
+task default: [:spec, :test, :rubocop]
