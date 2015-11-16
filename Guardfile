@@ -18,9 +18,7 @@ group :spec do
     watch('spec/wundertuete_helper.rb') { 'spec' }
     watch('spec/spec_helper.rb')        { 'spec' }
   end
-end
 
-group :test do
   guard :cucumber, all_after_pass: true, all_on_start: true, notification: true do
     watch(%r{^features/.+\.feature$})
     watch(%r{^features/support/.+$}) { 'features' }
