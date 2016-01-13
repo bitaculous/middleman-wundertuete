@@ -7,7 +7,7 @@ Release
 STEPS:
 ------
 
-1. Bump version in `lib/middleman-wundertuete/version.rb`
+1. Bump version in `lib/middleman/wundertuete/version.rb`
 2. Push changes
 3. Create a tag
 
