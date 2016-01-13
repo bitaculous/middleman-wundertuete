@@ -1,7 +1,7 @@
 root = File.expand_path '../../', __FILE__
 
 # Require the test object.
-require 'middleman-wundertuete'
+require 'middleman/wundertuete'
 
 # Require the spec helper.
 require 'spec_helper'
