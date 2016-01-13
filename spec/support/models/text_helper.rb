@@ -1,4 +1,4 @@
-require 'middleman-wundertuete/helpers/text_helper'
+require 'middleman/wundertuete/helpers/text_helper'
 
 # = TextHelper
 #

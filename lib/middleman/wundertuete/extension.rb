@@ -1,5 +1,5 @@
-require 'middleman-wundertuete/helpers/tag_helper'
-require 'middleman-wundertuete/helpers/text_helper'
+require 'middleman/wundertuete/helpers/tag_helper'
+require 'middleman/wundertuete/helpers/text_helper'
 
 module Middleman
   module Wundertuete #:nodoc:

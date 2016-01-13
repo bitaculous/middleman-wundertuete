@@ -1,6 +1,6 @@
 #!/usr/bin/env gem build
 
-require_relative 'lib/middleman-wundertuete/version'
+require_relative 'lib/middleman/wundertuete/version'
 
 Gem::Specification.new 'middleman-wundertuete', Middleman::Wundertuete::VERSION do |spec|
   spec.summary          = 'A Lucky Bag for Middleman'
