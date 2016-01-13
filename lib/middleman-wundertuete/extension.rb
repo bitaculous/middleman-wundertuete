@@ -3,7 +3,7 @@ require 'middleman-wundertuete/helpers/text_helper'
 
 module Middleman
   module Wundertuete #:nodoc:
-    # = UuidValidator
+    # = Extension
     #
     # The Extension class, inherited from `Middleman::Extension`.
     class Extension < Middleman::Extension

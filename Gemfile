@@ -23,11 +23,21 @@ group :test do
 
   # --- Code coverage ---
 
-  gem 'simplecov', '~> 0.10.0', require: false
+  gem 'simplecov', '~> 0.11.1', require: false
 
   gem 'codeclimate-test-reporter', '~> 0.4.8', require: false
+end
 
+# == Misc ===
+
+group :misc do
   # --- Formatter ---
 
   gem 'nyan-cat-formatter', '~> 0.11', require: false
+
+  # --- OS X ---
+
+  gem 'growl', '~> 1.0.3', require: RUBY_PLATFORM.include?('darwin') && 'growl'
+
+  gem 'rb-fsevent', '~> 0.9.6', require: RUBY_PLATFORM.include?('darwin') && 'rb-fsevent'
 end
