@@ -14,7 +14,7 @@ Gem::Specification.new 'middleman-wundertuete', Middleman::Wundertuete::VERSION 
   spec.required_ruby_version     = '~> 2.2'
   spec.required_rubygems_version = '~> 2.4'
 
-  spec.add_runtime_dependency 'middleman-core', '>= 3.4.1', '<= 4.1.0'
+  spec.add_runtime_dependency 'middleman-core', '>= 3.4.1', '< 5.0'
 
   spec.add_development_dependency 'rake',  '~> 10.5', '>= 10.5.0'
   spec.add_development_dependency 'haml',  '~> 4.0',  '>= 4.0.7'
