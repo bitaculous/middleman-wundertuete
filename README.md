@@ -2,6 +2,8 @@
 =======================
 
 [![Travis CI Status][Travis CI Status]][Travis CI]
+[![Code Climate Status][Code Climate Status]][Code Climate]
+[![Test Coverage Status][Test Coverage Status]][Test Coverage]
 [![Gemnasium Status][Gemnasium Status]][Gemnasium]
 
 **A Lucky Bag for [Middleman]**
@@ -75,6 +77,8 @@ License
 [Middleman Wundertuete] is released under the [MIT License (MIT)], see [LICENSE].
 
 [Bundler]: http://bundler.io "The best way to manage a Ruby application's gems"
+[Code Climate]: https://codeclimate.com/github/bitaculous/middleman-wundertuete "Middleman Wundertuete at Code Climate"
+[Code Climate Status]: https://img.shields.io/codeclimate/github/bitaculous/middleman-wundertuete.svg?style=flat "Code Climate Status"
 [Cucumber]: https://cucumber.io "Simple, human collaboration"
 [Gemnasium]: https://gemnasium.com/bitaculous/middleman-wundertuete "Middleman Wundertuete at Gemnasium"
 [Gemnasium Status]: https://img.shields.io/gemnasium/bitaculous/middleman-wundertuete.svg?style=flat "Gemnasium Status"
@@ -87,5 +91,7 @@ License
 [RSpec]: http://rspec.info "Behaviour Driven Development for Ruby"
 [RuboCop]: https://github.com/bbatsov/rubocop "A Ruby static code analyzer, based on the community Ruby style guide."
 [Semantic Versioning 2.0.0]: http://semver.org "Semantic Versioning 2.0.0"
+[Test Coverage]: https://codeclimate.com/github/bitaculous/middleman-wundertuete "Test Coverage (Code Climate)"
+[Test Coverage Status]: https://img.shields.io/codeclimate/coverage/github/bitaculous/middleman-wundertuete.svg?style=flat "Test Coverage Status"
 [Travis CI]: https://travis-ci.org/bitaculous/middleman-wundertuete "Middleman Wundertuete at Travis CI"
 [Travis CI Status]: https://img.shields.io/travis/bitaculous/middleman-wundertuete.svg?style=flat "Travis CI Status"
