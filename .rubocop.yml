@@ -9,11 +9,11 @@ Style/AsciiComments:
   Enabled: false
 
 Style/FileName:
-  Description: 'Use snake_case for source file names.'
+  Description: 'Use snake case for source file names.'
   StyleGuide: 'https://github.com/bbatsov/ruby-style-guide#snake-case-files'
   Enabled: false
 
-Style/SingleSpaceBeforeFirstArg:
+Style/SpaceBeforeFirstArg:
   Description: >-
                  Checks that exactly one space is used between a method name and the first argument for method calls
                  without parentheses.
