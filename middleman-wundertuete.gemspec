@@ -16,8 +16,9 @@ Gem::Specification.new 'middleman-wundertuete', Middleman::Wundertuete::VERSION 
 
   spec.add_runtime_dependency 'middleman-core', '>= 3.4.1', '< 5.0'
 
-  spec.add_development_dependency 'rake',  '~> 11.1', '>= 11.1.2'
-  spec.add_development_dependency 'haml',  '~> 4.0',  '>= 4.0.7'
-  spec.add_development_dependency 'rspec', '~> 3.4',  '>= 3.4.0'
-  spec.add_development_dependency 'aruba', '~> 0.12', '>= 0.12.0'
+  spec.add_development_dependency 'rake',     '~> 11.1', '>= 11.1.2'
+  spec.add_development_dependency 'haml',     '~> 4.0',  '>= 4.0.7'
+  spec.add_development_dependency 'rspec',    '~> 3.4',  '>= 3.4.0'
+  spec.add_development_dependency 'aruba',    '~> 0.12', '>= 0.12.0'
+  spec.add_development_dependency 'capybara', '~> 2.7', '>= 2.7.1'
 end
